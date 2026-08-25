@@ -24,9 +24,9 @@ st.set_page_config(
 @st.cache_resource
 def load_resources():
     
-    model = load_model("next_word_lstm.h5")
+    model = load_model("End To End Deep Learning Project Using LSTM And GRU RNN\next_word_lstm.h5")
     
-    with open("tokenizer.pkl", "rb") as handle:
+    with open("End To End Deep Learning Project Using LSTM And GRU RNN\tokenizer.pkl", "rb") as handle:
         tokenizer = pickle.load(handle)
     
     return model, tokenizer
